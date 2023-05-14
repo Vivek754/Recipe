@@ -56,6 +56,9 @@ searchBtn.addEventListener('click', () => {
 		})
 		.catch(err => {
 			console.error(err);
+			const error = document.createElement("h1");
+			error.innerHTML = "You have reached the daily Limit. Please try again next day. Thank You !";
+			recipeDetailContainer.appendChild(error)
 		});
 	window.getId = function (btn) {
 
